@@ -9,5 +9,7 @@ jobs:
   PHPUnit:
     runs-on: ubuntu-22.04
     steps:
+      - name: ls
+        run: ls
       - name: Check systemdir
         run: php check.php
