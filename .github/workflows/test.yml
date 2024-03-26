@@ -9,6 +9,8 @@ jobs:
   PHPUnit:
     runs-on: ubuntu-22.04
     steps:
+      - name: Checking out code
+        uses: actions/checkout@v4
       - name: ls
         run: ls
       - name: Check systemdir
