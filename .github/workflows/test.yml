@@ -7,9 +7,6 @@ env:
 
 jobs:
   PHPUnit:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
     steps:
-      - name: Check systemdpir
+      - name: Check systemdir
         run: check.php
