@@ -1,6 +1,6 @@
 <?php
 
-$tempdir = sys_get_temp_dir();
+$tempdir = sys_get_temp_dir() . '/requestdir';
 var_dump($tempdir);
 
 $tempdir = realpath($tempdir);
