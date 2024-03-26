@@ -1,0 +1,17 @@
+name: Core
+
+on:
+  push
+  workflow_dispatch
+
+env:
+  php: 8.2
+
+jobs:
+  PHPUnit:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+    steps:
+      - name: Check systemdpir
+        run: check.php
