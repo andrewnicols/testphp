@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Check systemdir
-        run: check.php
+        run: php check.php
