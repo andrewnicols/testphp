@@ -1,10 +1,6 @@
 <?php
 
-$tempdir = sys_get_temp_dir() . '/requestdir';
-var_dump($tempdir);
+exec("php -l check.php", $output, $returncode);
 
-$tempdir = realpath($tempdir);
-var_dump($tempdir);
-
-$dirname = $tempdir . "/example";
-var_dump(mkdir($dirname));
+var_dump($output);
+var_dump($returncode);
